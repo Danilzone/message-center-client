@@ -1,0 +1,27 @@
+// fonts
+
+$font-path: "../../../assets/font/";
+$Involve-Bold: $font-path + 'Involve-Bold.otf';
+$Involve-Medium: $font-path + 'Involve-Medium.otf';
+$Involve-Regular: $font-path + 'Involve-Regular.otf';
+$Involve-SemiBold: $font-path + 'Involve-SemiBold.otf';
+
+@font-face {
+    font-family: 'Involve-Bold';
+    src: url($Involve-Bold) format('opentype');
+}
+
+@font-face {
+    font-family: 'Involve-Medium';
+    src: url($Involve-Medium) format('opentype');
+}
+
+@font-face {
+    font-family: 'Involve-Regular';
+    src: url($Involve-Regular) format('opentype');
+}
+
+@font-face {
+    font-family: 'Involve-SemiBold';
+    src: url($Involve-SemiBold) format('opentype');
+}
