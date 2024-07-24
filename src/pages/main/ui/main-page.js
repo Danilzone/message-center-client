@@ -2,8 +2,8 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import { LeftPanel } from '../../../widgets/leftpanel';
-
+import { LeftPanel } from '../../../widgets';
+import { Search } from '../../../widgets';
 function MainPage() {
         
     // const location = useLocation()
@@ -24,9 +24,17 @@ function MainPage() {
 
         <div className='main-page'>
 
-            <LeftPanel/>
+            <div className='main-left-block'>
+                <LeftPanel/>
+                <div className='chats-block'>
+                    <Search/>
 
+                </div>
+            </div>
 
+            <div className='main-right-block'>
+
+            </div>
         </div>
     )
 }
