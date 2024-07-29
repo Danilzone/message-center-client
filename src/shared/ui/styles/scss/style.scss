@@ -217,6 +217,53 @@
     
 }
 
+.list-chats {
+    
+    display: flex;
+    width: 100%;
+
+    max-height: 100%;
+    overflow: auto;
+    flex-direction: column;
+
+    margin-top: 12px;
+
+
+}
+
+.chats {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat {
+    width: 92%;
+    height: 82px;
+
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 19px;
+}
+
+.mark {
+    display: flex;
+    width: 71px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.chat-info {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid $gray;
+}
+
 .search-block {
     display: flex;
     flex-direction: row;
@@ -227,6 +274,27 @@
 
     padding-top: 35px;
     padding-bottom: 12px;
+}
+
+.chat-start-block {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: space-around;
+
+    // background-color: red;
+}
+
+.chat-end-block {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 70px;
+}
+
+.message-date {
+    font-size: 10px;
+    color: $white-gray;
 }
 
 .dots {
@@ -302,6 +370,37 @@
     display: flex;
     flex-direction: column;
 }
+
+.mark-circle {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 0;
+}
+
+.user-name {
+    font-size: 17px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.product-name {
+    font-size: 15px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.last-message {
+    font-size: 15px;
+    width: 50%;
+    color: $white-gray;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 
 .regular {
     font-family: 'Involve-Regular';

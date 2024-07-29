@@ -2,14 +2,15 @@
 import { HiOutlinePlus } from "react-icons/hi";
 
 
-function Circle({account, color, isActive, click, text}) {
+function Circle({account, mark, color, isActive, click, text}) {
     return (
 
-        <div className={`circle ${color} ${account ? "account" : ""}`} onClick={click}>
+        <div className={`circle ${color} ${account ? "account" : ""} ${mark ? "mark-circle" : ""} `} onClick={click}>
             {
-                text ? 
-                    <div className="regular black">{text}</div> : isActive ?
-                        <HiOutlinePlus /> : <div></div>
+                mark ? <div></div> :
+                    text ? 
+                        <div className="regular black">{text}</div> : isActive ?
+                            <HiOutlinePlus /> : <div></div> 
             } 
         </div>
  

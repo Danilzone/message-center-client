@@ -6,9 +6,6 @@ import { API_URL, API_HEADER_AUTH, API_HEADER_REG } from "../../../shared";
 class UserAPI {
 
     async auth(data) {
-
-        console.log(data, API_HEADER_AUTH)
-
         try {
             const res = await axios.post(`${API_URL}/auth/jwt/login`, data, { headers: API_HEADER_AUTH })
             return res

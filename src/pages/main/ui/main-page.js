@@ -2,8 +2,9 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-import { LeftPanel } from '../../../widgets';
-import { Search } from '../../../widgets';
+import { LeftPanel, Search, Chat } from '../../../widgets';
+
+
 function MainPage() {
         
     // const location = useLocation()
@@ -29,6 +30,17 @@ function MainPage() {
                 <div className='chats-block'>
                     <Search/>
 
+                    <div className="list-chats">
+                        <div className="chats">
+                            <Chat color="yellow" 
+                            userName="Игорь Григорьев Игоревич" 
+                            productName="Название товара" 
+                            lastMessage="Последнее сообщение" 
+                            date="22.05.2022"
+                        />
+                        </div>
+                    </div>
+                
                 </div>
             </div>
 
