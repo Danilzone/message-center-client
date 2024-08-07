@@ -5,7 +5,7 @@ import { PiDotsThreeOutline } from "react-icons/pi";
 import { Input } from '../../../shared';
 import { useState } from 'react';
 
-function Search() {
+function Search({click}) {
 
     const [searchText, setSearchText] = useState('')
 
@@ -13,7 +13,7 @@ function Search() {
         <div className="search-block">
             <Input search placeholder="Поиск" inputChange={setSearchText} />
             <div className="dots">
-                <PiDotsThreeOutline size={28} />
+                <PiDotsThreeOutline size={28} onClick={click} />
             </div>
         </div>
     )

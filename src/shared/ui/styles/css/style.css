@@ -305,7 +305,7 @@
 }
 
 .chat {
-  width: 92%;
+  cursor: pointer;
   height: 82px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -317,6 +317,7 @@
   margin-bottom: 5px;
   margin-top: 5px;
   margin-left: 19px;
+  margin-right: 40px;
 }
 
 .mark {
@@ -387,6 +388,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   width: 70px;
 }
 
@@ -531,6 +535,29 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.count-message {
+  width: 16px;
+  height: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #13266A;
+  border-radius: 50px;
+  font-size: 10px;
+  color: #F7F7F7;
+}
+
+.setting {
+  background-color: transparent;
+  border: 1px #A0A0A0 solid;
 }
 
 .regular {

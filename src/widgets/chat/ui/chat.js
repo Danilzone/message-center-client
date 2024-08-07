@@ -1,8 +1,10 @@
 import { Circle } from "../../../shared";
 
-function Chat({color, userName, productName, lastMessage, date}) {
-    return(
-        <div className="chat">
+function Chat({color, userName, productName, lastMessage, date, countMessage,
+    click, settingMode}) {
+    
+        return(
+        <div className="chat" onClick={click}>
             <div className="mark">
                 <Circle mark color={color} />
             </div>
@@ -18,9 +20,14 @@ function Chat({color, userName, productName, lastMessage, date}) {
                         {date}
                     </div>
 
-                    <div className="">
+                    <div className={`count-message regular ${settingMode ? "setting" : "" }`}>
+                        {
+                            settingMode ? <div> </div> : countMessage
+                        }
 
                     </div>
+
+                    <div></div>
 
                 </div>
             </div>

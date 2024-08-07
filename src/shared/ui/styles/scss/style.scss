@@ -237,7 +237,9 @@
 }
 
 .chat {
-    width: 92%;
+    cursor: pointer;
+
+    // width: 92%;
     height: 82px;
 
     display: flex;
@@ -246,6 +248,7 @@
     margin-bottom: 5px;
     margin-top: 5px;
     margin-left: 19px;
+    margin-right: 40px;
 }
 
 .mark {
@@ -289,6 +292,8 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    align-items: end;
+
     width: 70px;
 }
 
@@ -401,6 +406,25 @@
     text-overflow: ellipsis;
 }
 
+.count-message {
+    width: 16px;
+    height: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $black-blue;
+    border-radius: 50px;
+    font-size: 10px;
+    color: $main-gray;
+}
+
+.setting {
+
+    background-color: transparent;
+    border: 1px $white-gray solid;
+}
 
 .regular {
     font-family: 'Involve-Regular';

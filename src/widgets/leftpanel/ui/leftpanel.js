@@ -3,16 +3,18 @@ import Circle from "../../../shared/ui/Circle";
 import { HiOutlinePlus } from "react-icons/hi";
 
 
-function LeftPanel() {
+function LeftPanel({settingMode}) {
     return (
-    
+        
+        
         <div className="left-panel">
+
             <div className="list-circle"> 
-                    <Circle color="blue" isActive={false} click={() => {}} />
-                    <Circle color="yellow" isActive={false} click={() => {}} />
-                    <Circle color="white-gray" isActive={false} click={() => {}} />
-                    <Circle color="green" isActive={false} click={() => {}} />
-                    <Circle color="red" isActive={false} click={() => {}} />
+                    <Circle color="blue" isActive={settingMode} click={() => {}} />
+                    <Circle color="yellow" isActive={settingMode} click={() => {}} />
+                    <Circle color="white-gray" isActive={settingMode} click={() => {}} />
+                    <Circle color="green" isActive={settingMode} click={() => {}} />
+                    <Circle color="red" isActive={settingMode} click={() => {}} />
             </div>
 
 
